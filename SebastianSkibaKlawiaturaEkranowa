@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    
+</head>
+<body>
+
+
+
+    
+    <script>
+               
+            let keyArr = Array();
+            
+            for(let x = 65; x < 91; x++) {
+                
+                keyArr.push(String.fromCharCode(x));
+            }
+			
+
+
+		function lett(arg) {
+		alert(arg.srcElement.innerHTML);
+		}
+          
+                for (let i = 0;i < keyArr.length; i++) {
+                    let btn = document.createElement("button");
+                    btn.innerHTML = keyArr[i];
+                    document.body.appendChild(btn);
+ 		    btn.addEventListener("click",lett);
+                }
+       
+            
+    </script>
+</body>
+</html>
